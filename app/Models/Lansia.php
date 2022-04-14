@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Lansia extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['name', 'jk', 'usia', 'bb', 'tensi'];
 }

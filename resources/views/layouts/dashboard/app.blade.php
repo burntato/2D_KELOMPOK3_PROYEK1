@@ -11,7 +11,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -42,7 +42,13 @@
     @include('layouts.dashboard.topnav')
     <!-- Header -->
     <!-- Header -->
-    @include('layouts.dashboard.header')
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          @yield('header')
+        </div>
+      </div>
+    </div>
     <!-- Page content -->
     <div class="container-fluid mt--6">
       @yield('content')

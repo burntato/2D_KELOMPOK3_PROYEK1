@@ -194,7 +194,7 @@
           <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="media align-items-center">
               <span class="avatar avatar-sm rounded-circle">
-                <img alt="Image placeholder" src="{{ asset('assets/img/users/' . auth()->user()->image) }}">
+                <img alt="Image placeholder" src="{{ asset('assets/img/users/user.png') }}">
               </span>
               <div class="media-body ml-2 d-none d-lg-block">
                 <span class="mb-0 text-sm  font-weight-bold">{{ auth()->user()->name }}</span>
@@ -222,16 +222,12 @@
               <span>Support</span>
             </a>
             <div class="dropdown-divider"></div>
-            <a
-              href="{{ route('logout') }}"
-              class="dropdown-item"
-              onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-              >
+            <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
               <i class="ni ni-user-run"></i>
               <span>{{ __('Logout') }}</span>
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
+              @csrf
             </form>
           </div>
         </li>
