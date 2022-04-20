@@ -33,6 +33,7 @@
           <th>Usia</th>
           <th>Berat Badan</th>
           <th>Tensi</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -44,6 +45,14 @@
           <td>{{ $lansia->usia }}</td>
           <td>{{ $lansia->bb }}</td>
           <td>{{ $lansia->tensi }}</td>
+          <td>
+            <a href="{{ route('lansia.edit', $lansia->id) }}" class="btn btn-primary btn-sm rounded">Ubah</a>
+            <form action="{{ route('lansia.destroy', $lansia->id) }}" method="post" class="d-inline">
+              @csrf
+              @method('DELETE')
+              <button type="submit" class="btn btn-danger btn-sm rounded">Hapus</button>
+            </form>
+          </td>
         </tr>
         @endforeach
       </tbody>
