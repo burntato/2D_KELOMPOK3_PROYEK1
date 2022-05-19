@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BalitaController;
 use App\Http\Controllers\LansiaController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,4 +26,5 @@ Route::middleware('auth')->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     Route::resource('lansia', LansiaController::class);
+    Route::resource('balita', BalitaController::class);
 });
