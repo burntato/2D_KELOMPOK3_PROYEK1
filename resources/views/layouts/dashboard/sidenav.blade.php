@@ -39,6 +39,12 @@
               <span class="nav-link-text">Balita</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('remaja.index') }}">
+              <!-- <i class="ni ni-shop text-primary"></i> -->
+              <span class="nav-link-text">Remaja</span>
+            </a>
+          </li>
           <!-- copy till this -->
         </ul>
       </div>
