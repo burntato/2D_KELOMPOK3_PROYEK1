@@ -10,7 +10,7 @@ class RemajaController extends Controller
     public function index()
     {
         $remajas = Remaja::paginate(10);
-        return view('remaja.index', compact('remaja'));
+        return view('remaja.index', compact('remajas'));
 
     }
     public function create()
@@ -65,5 +65,3 @@ class RemajaController extends Controller
     }
 }
 
-
-}

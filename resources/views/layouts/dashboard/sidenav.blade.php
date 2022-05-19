@@ -45,6 +45,12 @@
               <span class="nav-link-text">Remaja</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('dewasa.index') }}">
+              <!-- <i class="ni ni-shop text-primary"></i> -->
+              <span class="nav-link-text">Dewasa</span>
+            </a>
+          </li>
           <!-- copy till this -->
         </ul>
       </div>

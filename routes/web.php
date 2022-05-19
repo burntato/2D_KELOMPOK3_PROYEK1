@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BalitaController;
+use App\Http\Controllers\DewasaController;
 use App\Http\Controllers\LansiaController;
 use App\Http\Controllers\RemajaController;
 use Illuminate\Support\Facades\Route;
@@ -29,4 +30,5 @@ Route::middleware('auth')->group(function () {
     Route::resource('lansia', LansiaController::class);
     Route::resource('balita', BalitaController::class);
     Route::resource('remaja', RemajaController::class);
+    Route::resource('dewasa', DewasaController::class);
 });
