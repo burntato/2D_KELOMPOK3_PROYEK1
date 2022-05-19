@@ -9,5 +9,5 @@ class Balita extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'jk', 'usia', 'bb',];
+    protected $fillable = ['name', 'jk', 'usia', 'bb'];
 }

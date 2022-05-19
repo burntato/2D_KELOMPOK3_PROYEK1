@@ -3,7 +3,6 @@
     <!-- Brand -->
     <div class="sidenav-header d-flex align-items-center">
       <a class="navbar-brand" href="{{ route('home') }}">
-        <img src="{{ asset('assets/img/brand/dark.png') }}" class="navbar-brand-img" alt="...">
       </a>
       <div class="ml-auto">
         <!-- Sidenav toggler -->
@@ -32,6 +31,12 @@
             <a class="nav-link" href="{{ route('lansia.index') }}">
               <!-- <i class="ni ni-shop text-primary"></i> -->
               <span class="nav-link-text">Lansia</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('balita.index') }}">
+              <!-- <i class="ni ni-shop text-primary"></i> -->
+              <span class="nav-link-text">Balita</span>
             </a>
           </li>
           <!-- copy till this -->

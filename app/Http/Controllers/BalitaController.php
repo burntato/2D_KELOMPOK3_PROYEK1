@@ -9,7 +9,7 @@ class BalitaController extends Controller
 {
     public function index()
     {
-        $balitas = Balita::pagination(10);
+        $balitas = Balita::paginate(10);
         return view('balita.index', compact('balitas'));
 
     }
@@ -53,7 +53,7 @@ class BalitaController extends Controller
 
     public function destroy(Balita $balitax)
     {
-        return $lansium->delete()
+        return $balitax->delete()
             ? redirect()->route('balita.index')->with('success', 'berhasil hapus data balita')
             : redirect()->route('balita.index')->with('failed', 'gagal hapus data balita');
     }
