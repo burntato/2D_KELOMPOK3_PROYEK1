@@ -28,8 +28,8 @@ class BalitaController extends Controller
         ]);
 
         return Balita::create($store)
-            ? redirect()->route('Balita.index')->with('success', 'berhasil menambahkan data Balita')
-            : redirect()->route('Balita.index')->with('failed', 'gagal menambahkan data Balita');
+            ? redirect()->route('balita.index')->with('success', 'berhasil menambahkan data Balita')
+            : redirect()->route('balita.index')->with('failed', 'gagal menambahkan data Balita');
     }
 
     public function edit(Balita $balitax)
