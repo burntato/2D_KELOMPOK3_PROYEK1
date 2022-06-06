@@ -11,7 +11,6 @@ class BalitaController extends Controller
     {
         $balitas = Balita::paginate(10);
         return view('balita.index', compact('balitas'));
-
     }
     public function create()
     {
@@ -32,12 +31,12 @@ class BalitaController extends Controller
             : redirect()->route('balita.index')->with('failed', 'gagal menambahkan data Balita');
     }
 
-    public function edit(Balita $balitax)
+    public function edit(Balita $balitum)
     {
-        return view('balita.edit', compact('balitax'));
+        return view('balita.edit', compact('balitum'));
     }
 
-    public function update(Request $request, Balita $balitax)
+    public function update(Request $request, Balita $balitum)
     {
         $update = $request->validate([
             'name' => ['required', 'string'],
@@ -46,14 +45,14 @@ class BalitaController extends Controller
             'bb' => ['required', 'numeric'],
         ]);
 
-        return $balitax->update($update)
+        return $balitum->update($update)
             ? redirect()->route('balita.index')->with('success', 'berhasil ubah data balita')
             : redirect()->route('balita.index')->with('failed', 'gagal ubah data balita');
     }
 
-    public function destroy(Balita $balitax)
+    public function destroy(Balita $balitum)
     {
-        return $balitax->delete()
+        return $balitum->delete()
             ? redirect()->route('balita.index')->with('success', 'berhasil hapus data balita')
             : redirect()->route('balita.index')->with('failed', 'gagal hapus data balita');
     }
