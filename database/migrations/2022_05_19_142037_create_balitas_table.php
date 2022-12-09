@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('jk');
             $table->integer('usia');
-            $table->integer('bb');
+            $table->float('bb');
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('jk');
             $table->integer('usia');
             $table->float('bb');
-            $table->string('tensi');
+            $table->integer('tensi');
             $table->timestamps();
         });
     }

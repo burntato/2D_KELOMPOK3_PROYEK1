@@ -15,6 +15,13 @@ return new class extends Migration
     {
         Schema::create('remajas', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('jk');
+            $table->integer('usia');
+            $table->float('bb');
+            $table->float('tb');
+            $table->integer('tensi');
+            $table->float('lingkar_lengan');
             $table->timestamps();
         });
     }

@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('dewasas', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('jk');
+            $table->integer('usia');
+            $table->float('bb');
+            $table->float('tb');
+            $table->integer('tensi');
             $table->timestamps();
         });
     }
