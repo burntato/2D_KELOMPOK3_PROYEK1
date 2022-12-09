@@ -41,8 +41,8 @@
           <td>{{ $loop->iteration }}</td>
           <td>{{ $balita->name }}</td>
           <td>{{ $balita->jk }}</td>
-          <td>{{ $balita->usia }}</td>
-          <td>{{ $balita->bb }}</td>
+          <td>{{ $balita->usia }} Tahun</td>
+          <td>{{ $balita->bb }} KG</td>
           <td>
             <a href="{{ route('balita.edit', $balita->id) }}" class="btn btn-primary btn-sm rounded">Ubah</a>
             <form action="{{ route('balita.destroy', $balita->id) }}" method="post" class="d-inline">

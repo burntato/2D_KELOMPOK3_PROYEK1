@@ -25,7 +25,7 @@ class LansiaController extends Controller
             'jk' => ['required', 'string'],
             'usia' => ['required', 'numeric'],
             'bb' => ['required', 'numeric'],
-            'tensi' => ['required', 'string']
+            'tensi' => ['required', 'numeric']
         ]);
 
         return Lansia::create($store)
@@ -45,7 +45,7 @@ class LansiaController extends Controller
             'jk' => ['required', 'string'],
             'usia' => ['required', 'numeric'],
             'bb' => ['required', 'numeric'],
-            'tensi' => ['required', 'string']
+            'tensi' => ['required', 'numeric']
         ]);
 
         return $lansium->update($update)

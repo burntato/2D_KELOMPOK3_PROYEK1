@@ -26,7 +26,7 @@ class RemajaController extends Controller
             'usia' => ['required', 'numeric'],
             'bb' => ['required', 'numeric'],
             'tb' => ['required', 'numeric'],
-            'tensi' => ['required', 'string'],
+            'tensi' => ['required', 'numeric'],
             'lila' => ['required', 'numeric'],
         ]);
 
@@ -48,7 +48,7 @@ class RemajaController extends Controller
             'usia' => ['required', 'numeric'],
             'bb' => ['required', 'numeric'],
             'tb' => ['required', 'numeric'],
-            'tensi' => ['required', 'string'],
+            'tensi' => ['required', 'numeric'],
             'lila' => ['required', 'numeric'],
         ]);
 

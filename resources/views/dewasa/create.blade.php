@@ -21,19 +21,19 @@
       </div>
       <div class="form-group">
         <label for="usia">Usia</label>
-        <input type="number" name="usia" id="usia" class="form-control">
+        <input type="number" name="usia" id="usia" class="form-control" required>
       </div>
       <div class="form-group">
         <label for="bb">Berat Badan</label>
-        <input type="number" name="bb" id="bb" class="form-control">
+        <input type="number" name="bb" id="bb" class="form-control" required>
       </div>
       <div class="form-group">
         <label for="bb">Tinggi Badan</label>
-        <input type="number" name="tb" id="bb" class="form-control">
+        <input type="number" name="tb" id="bb" class="form-control" required>
       </div>
       <div class="form-group">
         <label for="tensi">Tensi</label>
-        <input type="text" name="tensi" id="tensi" class="form-control">
+        <input type="number" name="tensi" id="tensi" class="form-control" required>
       </div>
       <button type="submit" class="btn btn-primary">Create</button>
     </form>

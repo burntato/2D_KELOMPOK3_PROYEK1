@@ -26,7 +26,7 @@ class DewasaController extends Controller
             'usia' => ['required', 'numeric'],
             'bb' => ['required', 'numeric'],
             'tb' => ['required', 'numeric'],
-            'tensi' => ['required', 'string'],
+            'tensi' => ['required', 'numeric'],
         ]);
 
         return Dewasa::create($store)
@@ -47,7 +47,7 @@ class DewasaController extends Controller
             'usia' => ['required', 'numeric'],
             'bb' => ['required', 'numeric'],
             'tb' => ['required', 'numeric'],
-            'tensi' => ['required', 'string']
+            'tensi' => ['required', 'numeric']
         ]);
 
         return $dewasax->update($update)
