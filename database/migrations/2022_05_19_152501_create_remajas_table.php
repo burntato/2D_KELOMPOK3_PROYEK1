@@ -21,7 +21,7 @@ return new class extends Migration
             $table->float('bb');
             $table->float('tb');
             $table->integer('tensi');
-            $table->float('lingkar_lengan');
+            $table->float('lila');
             $table->timestamps();
         });
     }

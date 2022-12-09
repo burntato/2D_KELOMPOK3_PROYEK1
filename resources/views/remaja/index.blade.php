@@ -45,10 +45,10 @@
           <td>{{ $remaja->name }}</td>
           <td>{{ $remaja->jk }}</td>
           <td>{{ $remaja->usia }}</td>
-          <td>{{ $remaja->bb }}</td>
-          <td>{{ $remaja->tb }}</td>
+          <td>{{ $remaja->bb }} KG</td>
+          <td>{{ $remaja->tb }} CM</td>
           <td>{{ $remaja->tensi }}</td>
-          <td>{{ $remaja->lila }}</td>
+          <td>{{ $remaja->lila }} CM</td>
           <td>
             <a href="{{ route('remaja.edit', $remaja->id) }}" class="btn btn-primary btn-sm rounded">Ubah</a>
             <form action="{{ route('remaja.destroy', $remaja->id) }}" method="post" class="d-inline">

@@ -4,6 +4,7 @@ use App\Http\Controllers\BalitaController;
 use App\Http\Controllers\DewasaController;
 use App\Http\Controllers\LansiaController;
 use App\Http\Controllers\RemajaController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*

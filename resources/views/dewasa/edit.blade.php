@@ -6,7 +6,7 @@
 <div class="card mt-3">
   <div class="card-body">
     <div class="card-title">Ubah Dewasa</div>
-    <form action="{{ route('lansia.update', $dewasax->id) }}" method="post">
+    <form action="{{ route('dewasa.update', $dewasax->id) }}" method="post">
       @csrf
       @method('PUT')
       <div class="form-group">

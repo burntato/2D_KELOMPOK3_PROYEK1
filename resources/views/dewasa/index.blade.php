@@ -43,8 +43,9 @@
           <td>{{ $loop->iteration }}</td>
           <td>{{ $dewasa->name }}</td>
           <td>{{ $dewasa->jk }}</td>
-          <td>{{ $dewasa->usia }}</td>
-          <td>{{ $dewasa->bb }}</td>
+          <td>{{ $dewasa->usia }} Tahun</td>
+          <td>{{ $dewasa->bb }} KG</td>
+          <td>{{ $dewasa->tb }} CM</td>
           <td>{{ $dewasa->tensi }}</td>
           <td>
             <a href="{{ route('dewasa.edit', $dewasa->id) }}" class="btn btn-primary btn-sm rounded">Ubah</a>

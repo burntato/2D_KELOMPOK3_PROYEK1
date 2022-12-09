@@ -45,7 +45,7 @@ class LansiaController extends Controller
             'jk' => ['required', 'string'],
             'usia' => ['required', 'numeric'],
             'bb' => ['required', 'numeric'],
-            'tensi' => ['required', 'numeric']
+            'tensi' => ['required', 'numeric'],
         ]);
 
         return $lansium->update($update)
