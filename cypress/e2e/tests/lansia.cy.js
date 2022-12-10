@@ -69,4 +69,88 @@ describe ('Actions (Lansia tests)', () => {
         // expect to have "Cypress Test Lansia"
         cy.contains('Cypress Test Lansia')
     })
+
+    it ('lansia test (fail ( Empty Berat Badan ))', () => {
+
+        // click on the button that says New
+        cy.get('a').contains('New').click()
+
+        // type name
+        cy.get('input[name=name]').type('Cypress Test Lansia')
+
+        // select
+        cy.get('select[name=jk]').select('L')
+
+        // select the fifth option
+        cy.get('select[name=usia]').select(5)
+
+        // type tensi
+        cy.get('input[name=tensi]').type(100)
+
+        // click on the button that says Create
+        cy.get('button[type=submit]').click()
+
+        // expect to be redirected to /lansia
+        cy.url().should('include', '/lansia')
+    })
+
+    it ('lansia test (fail ( Empty Name ))', () => {
+
+        // click on the button that says New
+        cy.get('a').contains('New').click()
+
+        // select
+        cy.get('select[name=jk]').select('L')
+
+        // select the fifth option
+        cy.get('select[name=usia]').select(5)
+
+        // type berat badan
+        cy.get('input[name=bb]').type(50)
+
+        // type tensi
+        cy.get('input[name=tensi]').type(100)
+
+        // click on the button that says Create
+        cy.get('button[type=submit]').click()
+
+        // expect to be redirected to /lansia
+        cy.url().should('include', '/lansia')
+    })
+
+    it ('lansia test (fail ( Empty Tensi ))', () => {
+
+        // click on the button that says New
+        cy.get('a').contains('New').click()
+
+        // type name
+        cy.get('input[name=name]').type('Cypress Test Lansia')
+
+        // select
+        cy.get('select[name=jk]').select('L')
+
+        // select the fifth option
+        cy.get('select[name=usia]').select(5)
+
+        // type berat badan
+        cy.get('input[name=bb]').type(50)
+
+        // click on the button that says Create
+        cy.get('button[type=submit]').click()
+
+        // expect to be redirected to /lansia
+        cy.url().should('include', '/lansia')
+    })
+
+    it ('lansia test (fail ( Empty everything ))', () => {
+
+            // click on the button that says New
+            cy.get('a').contains('New').click()
+
+            // click on the button that says Create
+            cy.get('button[type=submit]').click()
+
+            // expect to be redirected to /lansia
+            cy.url().should('include', '/lansia')
+    })
 })

@@ -50,7 +50,7 @@
 
       <div class="form-group">
         <label for="bb">Berat Badan</label>
-        <input type="number" name="bb" id="bb" placeholder="Berat berdasarkan KG" class="form-control">
+        <input type="number" name="bb" id="bb" placeholder="Berat berdasarkan KG" class="form-control" required>
       </div>
       <div class="form-group">
         <label for="tensi">Tensi</label>

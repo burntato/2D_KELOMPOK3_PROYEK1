@@ -11,7 +11,7 @@
       @method('PUT')
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z\s]+" value="{{ $lansium->name }}">
+        <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z\s]+" value="{{ $lansium->name }}" required>
         <p>Nama tidak bisa menggunakan nomor</p>
       </div>
       <div class="form-group">
@@ -51,11 +51,11 @@
 
       <div class="form-group">
         <label for="bb">Berat Badan</label>
-        <input type="number" name="bb" id="bb" class="form-control" placeholder="Berat berdasarkan KG" value="{{ $lansium->bb }}">
+        <input type="number" name="bb" id="bb" class="form-control" placeholder="Berat berdasarkan KG" value="{{ $lansium->bb }}" required>
       </div>
       <div class="form-group">
         <label for="tensi">Tensi</label>
-        <input type="text" name="tensi" id="tensi" class="form-control" value="{{ $lansium->tensi }}">
+        <input type="text" name="tensi" id="tensi" class="form-control" value="{{ $lansium->tensi }}" required>
       </div>
       <button type="submit" class="btn btn-primary">Perbarui</button>
     </form>
