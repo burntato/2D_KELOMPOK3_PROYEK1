@@ -11,7 +11,7 @@
       @method('PUT')
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" pattern="[a-zA-Z]*" class="form-control" value="{{ $balitum->name }}" required>
+        <input type="text" name="name" id="name" pattern="[a-zA-Z\s]+" class="form-control" value="{{ $balitum->name }}" required>
         <p>Nama tidak bisa menggunakan nomor</p>
       </div>
       <div class="form-group">

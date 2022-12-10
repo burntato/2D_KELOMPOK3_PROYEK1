@@ -2460,10 +2460,10 @@
   dependencies:
     "css-tree" "^1.1.2"
 
-"cypress@^12.0.1":
-  "integrity" "sha512-I1Ag5RsPEINfUlQtV6xwkd6ktJuu5QGiKZ3pFa/IXjcyCY6I7CH3gOz0juLOhg/LXOPrQtZH35ulcWDQohyyEA=="
-  "resolved" "https://registry.npmjs.org/cypress/-/cypress-12.0.1.tgz"
-  "version" "12.0.1"
+"cypress@^12.0.2":
+  "integrity" "sha512-WnLx1DpnbF1vbpDBkgP14rK5yS3U+Gvxrv2fsB4Owma26oIyENj7DDRnsJbSZuTfG4mcuUJxAkRHJR2wBqBfMA=="
+  "resolved" "https://registry.npmjs.org/cypress/-/cypress-12.0.2.tgz"
+  "version" "12.0.2"
   dependencies:
     "@cypress/request" "^2.88.10"
     "@cypress/xvfb" "^1.2.4"

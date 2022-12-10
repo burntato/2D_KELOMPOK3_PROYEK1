@@ -11,7 +11,7 @@
                 @method('PUT')
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z]*" value="{{ $remaja->name }}">
+                    <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z\s]+" value="{{ $remaja->name }}">
                     <p>Nama tidak bisa menggunakan nomor</p>
                 </div>
                 <div class="form-group">
