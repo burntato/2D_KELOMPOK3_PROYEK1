@@ -42,8 +42,8 @@
           <td>{{ $loop->iteration }}</td>
           <td>{{ $lansia->name }}</td>
           <td>{{ $lansia->jk }}</td>
-          <td>{{ $lansia->usia }}</td>
-          <td>{{ $lansia->bb }}</td>
+          <td>{{ $lansia->usia }} Tahun</td>
+          <td>{{ $lansia->bb }} KG</td>
           <td>{{ $lansia->tensi }}</td>
           <td>
             <a href="{{ route('lansia.edit', $lansia->id) }}" class="btn btn-primary btn-sm rounded">Ubah</a>

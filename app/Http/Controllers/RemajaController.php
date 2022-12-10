@@ -35,12 +35,12 @@ class RemajaController extends Controller
             : redirect()->route('remaja.index')->with('failed', 'gagal menambahkan data remaja');
     }
 
-    public function edit(Remaja $remajax)
+    public function edit(Remaja $remaja)
     {
-        return view('remaja.edit', compact('remajax'));
+        return view('remaja.edit', compact('remaja'));
     }
 
-    public function update(Request $request, Remaja $remajax)
+    public function update(Request $request, Remaja $remaja)
     {
         $update = $request->validate([
             'name' => ['required', 'string'],
@@ -52,14 +52,14 @@ class RemajaController extends Controller
             'lila' => ['required', 'numeric'],
         ]);
 
-        return $remajax->update($update)
+        return $remaja->update($update)
             ? redirect()->route('remaja.index')->with('success', 'berhasil ubah data remaja')
             : redirect()->route('remaja.index')->with('failed', 'gagal ubah data remaja');
     }
 
-    public function destroy(Remaja $remajax)
+    public function destroy(Remaja $remaja)
     {
-        return $remajax->delete()
+        return $remaja->delete()
             ? redirect()->route('remaja.index')->with('success', 'berhasil hapus data remaja')
             : redirect()->route('remaja.index')->with('failed', 'gagal hapus data remaja');
     }

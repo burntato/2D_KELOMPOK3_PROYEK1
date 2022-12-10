@@ -10,7 +10,7 @@
       @csrf
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" class="form-control">
+        <input type="text" name="name" id="name" pattern="[a-zA-Z]*" class="form-control">
         <p>Nama tidak bisa menggunakan nomor</p>
       </div>
       <div class="form-group">

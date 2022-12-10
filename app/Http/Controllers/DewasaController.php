@@ -34,12 +34,12 @@ class DewasaController extends Controller
             : redirect()->route('dewasa.index')->with('failed', 'gagal menambahkan data dewasa');
     }
 
-    public function edit(Dewasa $dewasax)
+    public function edit(Dewasa $dewasa)
     {
-        return view('dewasa.edit', compact('dewasax'));
+        return view('dewasa.edit', compact('dewasa'));
     }
 
-    public function update(Request $request, Dewasa $dewasax)
+    public function update(Request $request, Dewasa $dewasa)
     {
         $update = $request->validate([
             'name' => ['required', 'string'],
@@ -50,14 +50,14 @@ class DewasaController extends Controller
             'tensi' => ['required', 'numeric']
         ]);
 
-        return $dewasax->update($update)
+        return $dewasa->update($update)
             ? redirect()->route('dewasa.index')->with('success', 'berhasil ubah data dewasa')
             : redirect()->route('dewasa.index')->with('failed', 'gagal ubah data dewasa');
     }
 
-    public function destroy(Dewasa $dewasax)
+    public function destroy(Dewasa $dewasa)
     {
-        return $dewasax->delete()
+        return $dewasa->delete()
             ? redirect()->route('dewasa.index')->with('success', 'berhasil hapus data dewasa')
             : redirect()->route('dewasa.index')->with('failed', 'gagal hapus data dewasa');
     }
