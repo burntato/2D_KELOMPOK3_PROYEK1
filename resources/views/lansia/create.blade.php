@@ -54,7 +54,7 @@
       </div>
       <div class="form-group">
         <label for="tensi">Tensi</label>
-        <input type="number" name="tensi" id="tensi" class="form-control">
+        <input type="number" name="tensi" id="tensi" class="form-control" required>
       </div>
       <button type="submit" class="btn btn-primary">Create</button>
     </form>
