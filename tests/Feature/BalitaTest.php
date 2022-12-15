@@ -18,6 +18,13 @@ class BalitaTest extends TestCase
      *
      * @return void
      */
+
+    // fill in balita data
+    // 1. name = String
+    // 2. jk = Enum
+    // 3. usia = Enum
+    // 4. bb = integer
+
     public function test_balita_add_success() {
 
         // login as admin
@@ -37,12 +44,6 @@ class BalitaTest extends TestCase
 
         // check if the page is loaded
         $response->assertStatus(200);
-
-        // fill in balita data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
 
         $response = $this->post('/balita', [
             'name' => 'test',
@@ -83,12 +84,6 @@ class BalitaTest extends TestCase
         // check if the page is loaded
         $response->assertStatus(200);
 
-        // fill in balita data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-
         $response = $this->post('/balita', [
             'name' => 'test',
             'jk' => 'L',
@@ -120,12 +115,6 @@ class BalitaTest extends TestCase
         //check if the page is loaded
         $response->assertStatus(200);
 
-        //fill in balita data
-        //1. name = String
-        //2. jk = Enum
-        //3. usia = Enum
-        //4. bb = integer
-
         $response = $this->post('/balita', [
             'name' => '',
             'jk' => 'L',
@@ -156,12 +145,6 @@ class BalitaTest extends TestCase
 
         //check if the page is loaded
         $response->assertStatus(200);
-
-        //fill in balita data
-        //1. name = String
-        //2. jk = Enum
-        //3. usia = Enum
-        //4. bb = integer
 
         $response = $this->post('/balita', [
             'name' => '',

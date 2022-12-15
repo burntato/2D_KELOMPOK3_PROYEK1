@@ -18,6 +18,17 @@ class RemajaTest extends TestCase
      *
      * @return void
      */
+
+    // fill in remaja data
+    // 1. name = String
+    // 2. jk = Enum
+    // 3. usia = Enum
+    // 4. bb = integer
+    // 5. tb = integer
+    // 6. tensi = integer
+    // 7. lila = integer
+
+
     public function test_remaja_add_success() {
 
         //login as admin
@@ -37,15 +48,6 @@ class RemajaTest extends TestCase
 
         // check if the page is loaded
         $response->assertStatus(200);
-
-        // fill in remaja data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-        // 5. tb = integer
-        // 6. tensi = integer
-        // 7. lila = integer
 
         $response = $this->post('/remaja', [
             'name' => 'test',
@@ -92,14 +94,6 @@ class RemajaTest extends TestCase
         // check if the page is loaded
         $response->assertStatus(200);
 
-        // fill in remaja data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-        // 5. tb = integer
-        // 6. tensi = integer
-
         $response = $this->post('/remaja', [
             'name' => 'test',
             'jk' => 'L',
@@ -133,14 +127,6 @@ class RemajaTest extends TestCase
 
         // check if the page is loaded
         $response->assertStatus(200);
-
-        // fill in remaja data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-        // 5. tb = integer
-        // 6. tensi = integer
 
         $response = $this->post('/remaja', [
             'name' => 'test',
@@ -176,14 +162,6 @@ class RemajaTest extends TestCase
         // check if the page is loaded
         $response->assertStatus(200);
 
-        // fill in remaja data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-        // 5. tb = integer
-        // 6. tensi = integer
-
         $response = $this->post('/remaja', [
             'name' => 'test',
             'jk' => 'L',
@@ -217,14 +195,6 @@ class RemajaTest extends TestCase
 
         // check if the page is loaded
         $response->assertStatus(200);
-
-        // fill in remaja data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-        // 5. tb = integer
-        // 6. tensi = integer
 
         $response = $this->post('/remaja', [
             'name' => 'test',
@@ -260,14 +230,6 @@ class RemajaTest extends TestCase
         // check if the page is loaded
         $response->assertStatus(200);
 
-        // fill in remaja data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-        // 5. tb = integer
-        // 6. tensi = integer
-
         $response = $this->post('/remaja', [
             'name' => '',
             'jk' => 'L',
@@ -301,14 +263,6 @@ class RemajaTest extends TestCase
 
         // check if the page is loaded
         $response->assertStatus(200);
-
-        // fill in remaja data
-        // 1. name = String
-        // 2. jk = Enum
-        // 3. usia = Enum
-        // 4. bb = integer
-        // 5. tb = integer
-        // 6. tensi = integer
 
         $response = $this->post('/remaja', [
             'name' => '',
