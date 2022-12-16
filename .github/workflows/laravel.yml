@@ -34,15 +34,3 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
-  # check for added codes with phpstan
-  phpstan:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Install PHPStan
-      run: composer require --dev phpstan/phpstan
-    - name: Run PHPStan
-      run: vendor/bin/phpstan analyse
-      # set path for phpstan
-      working-directory: ./app
-
